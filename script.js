@@ -9,10 +9,10 @@ function getComputerChoice() {
 let computerChoice = getComputerChoice();
 
 function getHumanChoice() {
-  return prompt();
+  return prompt("Please type Rock, Paper, or Scissor:");
 }
 let userInput = getHumanChoice();
-let humanChoice = userInput.toLowerCase();
+let humanChoice = userInput.toLowerCase().trim();
 
 function result() {
   if (
@@ -22,25 +22,25 @@ function result() {
   ) {
     return "Invalid input. Please type Rock, paper or scissor";
   }
-  if (computerChoice === 2 && humanChoice === "rock") {
+  if (computerChoice === paper && humanChoice === "rock") {
     return "Computer Wins. Paper beats rock.";
-  } else if (computerChoice === 2 && humanChoice === "scissor") {
-    return "You win. Scissor beats rock.";
-  } else if (computerChoice === 1 && humanChoice === "paper") {
+  } else if (computerChoice === paper && humanChoice === "scissor") {
+    return "You win. Scissor beats paper.";
+  } else if (computerChoice === rock && humanChoice === "paper") {
     return "You win. Paper beats rock.";
-  } else if (computerChoice === 1 && humanChoice === "Scissor") {
+  } else if (computerChoice === rock && humanChoice === "scissor") {
     return "Computer Wins. Rock beats scissor.";
-  } else if (computerChoice === 3 && humanChoice === "rock") {
+  } else if (computerChoice === scissor && humanChoice === "rock") {
     return "You win. Rock beats scissor.";
-  } else if (computerChoice === 3 && humanChoice === "Paper") {
+  } else if (computerChoice === scissor && humanChoice === "paper") {
     return "Computer Wins. Scissor beats paper.";
   } else {
     return `It's a draw. you both selected ${humanChoice}.`;
   }
 }
 
-console.log(result());
 //
 //
 //
 let humanScore = 0;
+let computerScore = 0;
