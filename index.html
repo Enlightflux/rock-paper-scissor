@@ -3,9 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <title>Rock paper scissor</title>
   </head>
   <body>
+    <div class="container">
+      <!--  -->
+      <div class="heading">
+        <h4>the mighty</h4>
+        <h1>rock paper scissor</h1>
+      </div>
+      <!--  -->
+      <div class="overallScoreContainer">
+        <div id="overallScore">
+          <h6>Overall Score</h6>
+          <div class="scores">
+            <div class="computer">Computer: -</div>
+            <div class="human">You: -</div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="stats">
+          <h3 class="winrate">Your current win rate is 10%</h3>
+        </div>
+      </div>
+      <!--  -->
+      <div class="currentStat">
+        <div class="currentChoice">
+          <h6>Current Choice</h6>
+          <div class="selections">
+            <div class="computerSelection">
+              <div></div>
+            </div>
+            <div class="yourselection">
+              <div></div>
+            </div>
+          </div>
+          <div class="selectedtags">
+            <div>Computer</div>
+            <div>You</div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="currentResult">
+          <p>current result</p>
+          <div class="currentResultMessage">
+            <h1>Let the battle begin</h1>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="selectionArea">
+        <div class="tagline">
+          <h1>Make your choice and make it <span>right</span></h1>
+          <h3>
+            Its up to you to save the humanity. Defeat the computer and call
+            yourself the mighty king.
+          </h3>
+        </div>
+        <div class="selectOptions">
+          <p class="rock rockSelection" value="rock">Rock</p>
+          <p class="paper paperSelection" value="paper">Paper</p>
+          <p class="scissor scissorSelection" value="scissor">Scissor</p>
+        </div>
+      </div>
+      <!--  
+    --->
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
